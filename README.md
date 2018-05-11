@@ -11,6 +11,13 @@
 * Ответы на вопросы
 * Исходники игр
 * Ссылки на полезные ресурсы
-
-
-
+  * Видеоуроки
+    * [Канал YoYo Games](https://www.youtube.com/user/yoyogamesltd)
+    * [Канал HeartBeast](https://www.youtube.com/user/uheartbeast)
+    * [Официальные уроки от Shaun Spalding](https://www.youtube.com/channel/UCn7FE3Tx391g1tWPv-1tv7Q)
+    * [Канал Making Games 101](https://www.youtube.com/channel/UCEHvTxm7M3EhrvFB5-_-veQ)
+    * [Канал Lets Learn Game Maker Studio](https://www.youtube.com/user/letslearngamemaker)
+  * [YoYo Games ресурсы для начинающих](https://www.yoyogames.com/blog/392/beginner-resources)
+  * [Большая подборка с reddit.com](https://www.reddit.com/r/gamemaker/comments/3lyoik/game_maker_handbook_resources_for_beginners_an/)
+  * [Официальный форум YoYo Games](https://forum.yoyogames.com/index.php)
+  * [Сайт с подборкой туторов](http://gamemakertutorials.com/)
