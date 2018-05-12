@@ -10,6 +10,9 @@
 * [Правила работы с репозиторием](https://github.com/WWWcool/GMS/wiki/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC)
 * [Обучающие материалы](https://github.com/WWWcool/GMS/wiki)
 * Ответы на вопросы
+  * [Форум hellroom](http://forum.hellroom.ru/index.php)
+    * [F.A.Q. для начинающих](http://forum.hellroom.ru/index.php?topic=2035.0)
+    * [Подборка тем из разделов для новичков и для продвинутых](http://forum.hellroom.ru/index.php?topic=14425.0)
 * Исходники игр
 * Ссылки на полезные ресурсы
   * Видеоуроки
