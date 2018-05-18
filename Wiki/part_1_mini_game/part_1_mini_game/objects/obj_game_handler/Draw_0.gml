@@ -16,6 +16,14 @@ draw_text(_view_x + _view_w/2,_view_y + 80,str);
 
 draw_text(_view_x + 50,_view_y + 50,"Round: work");
 
+// draw target
+var text_x = _view_x + _view_w/2 + 150;
+var text_y = _view_y + 60;
+draw_text(text_x,text_y,"Target");
+draw_sprite_ext(spr_ball,0,text_x + 50 + sprite_get_width(spr_ball),text_y,
+					1,1,0,scr_get_color(game_target_index),1);
+
+
 if(game_win || game_lose)
 {
 	var _alpha = draw_get_alpha();

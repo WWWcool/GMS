@@ -1,3 +1,6 @@
 /// @description Init colour
+var ind = 0;
 
-ball_colour = c_white;//choose(c_red,c_blue,c_green,c_purple,c_orange);
+ball_color_index = irandom(EnBallColor.LENGTH - 1);
+
+ball_color = scr_get_color(ball_color_index);

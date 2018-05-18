@@ -1,5 +1,7 @@
 /// @description game vars
 
+enum EnBallColor{Red, Pink, Orange, Green, Emerald, LENGTH, NONE};
+
 game_win = 0;
 game_lose = 0;
 
@@ -8,6 +10,8 @@ game_time = game_time_init;
 game_time_add = 3;
 
 game_balls_prev = 0;
+
+game_target_index = EnBallColor.NONE;
 
 /// draw gui vars
 

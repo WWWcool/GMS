@@ -7,6 +7,7 @@ if(game_win != 1 && game_lose != 1)
 	if(game_balls_prev == 0)
 	{
 		game_balls_prev = instance_number(obj_ball);
+		game_target_index = scr_next_target();
 	}
 	else
 	{
@@ -16,6 +17,7 @@ if(game_win != 1 && game_lose != 1)
 		{
 			game_balls_prev = balls_count;
 			game_time += game_time_add;
+			game_target_index = scr_next_target();
 		}
 		if(balls_count == 0)
 		{
