@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1c6f7dd6-8ce4-4ac6-a520-feef76eebb04",
+            "Value": {
+                "id": "a41eab01-55b9-4f01-8fe5-0b83d9239d7f",
+                "resourcePath": "objects\\obj_wall\\obj_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1e94cfea-c67e-4539-a8f3-e15ab30106ba",
             "Value": {
                 "id": "bdca9bce-de98-4627-91ef-6013db01d25d",
@@ -76,6 +84,14 @@
                 "id": "95e24786-9d0c-4928-be9b-899000c72fb3",
                 "resourcePath": "views\\217a0433-fd0c-471a-a44e-35bfb98bbba5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3054d1c3-6ba7-4b23-8c98-79d9fe217593",
+            "Value": {
+                "id": "2dc22116-fcc1-4d1d-807e-e6d179b59a30",
+                "resourcePath": "objects\\obj_game_handler\\obj_game_handler.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -151,6 +167,14 @@
             }
         },
         {
+            "Key": "63509847-1986-4df7-b670-12a3f5785b9b",
+            "Value": {
+                "id": "efdb4c8f-6f5e-45f2-aa0e-c93b8a199a1d",
+                "resourcePath": "objects\\obj_ball\\obj_ball.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6aa4fb28-b2a3-43e5-8b05-607544ae0ce3",
             "Value": {
                 "id": "294a6ea4-6bf7-4065-8e96-08cba4e1349f",
@@ -172,6 +196,14 @@
                 "id": "281332f8-6e7d-4690-a99e-40d18cc01d6b",
                 "resourcePath": "options\\html5\\options_html5.yy",
                 "resourceType": "GMHtml5Options"
+            }
+        },
+        {
+            "Key": "7631338b-5811-41d9-b696-7f4b4e887ec4",
+            "Value": {
+                "id": "cbcb09a2-0881-4a9e-9823-4e1dd0a5f94e",
+                "resourcePath": "objects\\obj_player\\obj_player.yy",
+                "resourceType": "GMObject"
             }
         },
         {
