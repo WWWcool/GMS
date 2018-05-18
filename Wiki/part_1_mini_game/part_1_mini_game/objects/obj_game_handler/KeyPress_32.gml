@@ -13,3 +13,7 @@ if(game_win)
 	}
 }
 
+if(!gui_start)
+{
+	gui_start = 1;
+}

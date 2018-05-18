@@ -1,5 +1,5 @@
 /// @description game vars
-
+game_start = 0;
 game_win = 0;
 game_lose = 0;
 
@@ -13,5 +13,16 @@ game_target_index = EnBallColor.NONE;
 
 /// draw gui vars
 
-gui_win_alpha = 0;
+gui_win_alpha[0] = 1;
 gui_win_alpha_speed = 0.1;
+gui_start = 0;
+
+gui_anim_target = 0;
+gui_anim_target_speed = 0.01;
+gui_anim_target_dir = 0;
+gui_anim_target_min = 0;
+gui_anim_target_max = 0.2;
+
+gui_anim_time = 0;
+gui_anim_time_speed = 0.005;
+gui_anim_time_max = 0.7;

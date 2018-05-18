@@ -1,8 +1,7 @@
 /// @description Game conditions
 
-
 // Check win game
-if(game_win != 1 && game_lose != 1)
+if(game_win != 1 && game_lose != 1 && game_start)
 {
 	if(game_balls_prev == 0)
 	{
@@ -18,6 +17,7 @@ if(game_win != 1 && game_lose != 1)
 			game_balls_prev = balls_count;
 			game_time += game_time_add;
 			game_target_index = scr_next_target();
+			gui_anim_time = gui_anim_time_max;
 		}
 		if(balls_count == 0)
 		{

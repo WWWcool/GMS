@@ -44,10 +44,26 @@ if (move_x != 0 || move_y != 0)
 		if(inst.ball_color_index == scr_get_target_index())
 		{
 			instance_destroy(inst,true);
+			anim_get = 1;
 		}
 	}
-
 }
 
+if(anim_get)
+{
+	image_angle += anim_get_rot_speed;
+	
+	if(image_angle >= anim_get_rot_init + 180)
+	{
+		image_angle = anim_get_rot_init;
+		anim_get = 0;
+	}
+}
 
-
+if(instance_number(obj_ball) == 0)
+{
+	x = room_width/2;
+	y = room_height/2;
+	anim_get = 1;
+	anim_get_rot_speed *= 1.05;
+}
