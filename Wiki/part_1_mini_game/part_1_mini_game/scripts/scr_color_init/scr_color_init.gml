@@ -5,6 +5,8 @@
 
 gml_pragma("global", "scr_color_init()");
 
+enum EnBallColor{Red, Pink, Orange, Green, Emerald, LENGTH, NONE};
+
 global.col_red		= make_color_rgb(225,19,29);
 global.col_pink		= make_color_rgb(255,113,123);
 global.col_orange	= make_color_rgb(236,176,91);
