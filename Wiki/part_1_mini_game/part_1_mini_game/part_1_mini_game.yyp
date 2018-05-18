@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "773608b3-2585-425c-b926-d71046767cc3",
+            "Value": {
+                "id": "2242014a-9b06-4c94-80c4-a33a90ad3a5f",
+                "resourcePath": "rooms\\rm_game\\rm_game.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7ba0461d-d25c-4367-b89f-881399c51f12",
             "Value": {
                 "id": "00c5b9b3-4651-4614-8dc6-5353fc1e335a",
