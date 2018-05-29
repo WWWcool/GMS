@@ -43,7 +43,10 @@ if (move_x != 0 || move_y != 0)
 	{
 		if(inst.ball_color_index == r3_scr_get_target_index())
 		{
-			instance_destroy(inst,true);
+			with(inst)
+			{
+				instance_destroy();
+			}
 		}
 	}
 

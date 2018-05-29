@@ -35,11 +35,11 @@ if(game_win || game_lose)
 	var str = "";
 	if(game_win)
 	{
-		str = "You won this round! \r\n\r\n Press - R - to restart \r\n Press - Space - to continue";
+		str = "You won this round! \n\n Press - R - to restart \n Press - Space - to continue";
 	}
 	else
 	{
-		str = "You losed this round! \r\n\r\n Press - R - to restart";
+		str = "You losed this round! \n\n Press - R - to restart";
 	}
 	draw_text(_view_x + _view_w/2,_view_y + _view_h/2,str);
 	if(gui_win_alpha < 1)gui_win_alpha += gui_win_alpha_speed;

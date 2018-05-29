@@ -53,18 +53,18 @@ if(game_start)
 		var str = "";
 		if(game_win)
 		{
-			str = "You won this round! \r\n\r\n Press - R - to restart \r\n Press - Space - to continue";
+			str = "You won this round! \n\n Press - R - to restart \n Press - Space - to continue";
 		}
 		else
 		{
-			str = "You losed this round! \r\n\r\n Press - R - to restart";
+			str = "You losed this round! \n\n Press - R - to restart";
 		}
 		scr_draw_msg(str,gui_win_alpha,1,gui_win_alpha_speed/10);
 	}
 }
 else
 {
-	var str = "Game rules:\r\n Collect target balls\r\n Controls: \r\n - WASD - to move\r\n\r\n Press - Space - to start game";
+	var str = "Game rules:\n Collect target balls\n\n Controls: \n - WASD - to move \n\n Press - Space - to start game";
 	if(!gui_start)
 	{
 		scr_draw_msg(str,gui_win_alpha,1,gui_win_alpha_speed);

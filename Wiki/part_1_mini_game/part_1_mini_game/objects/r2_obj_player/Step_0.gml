@@ -41,7 +41,10 @@ if (move_x != 0 || move_y != 0)
 	var inst = collision_circle(x,y,sprite_get_width(sprite_index)/2,r2_obj_ball,0,1);
 	if(instance_exists(inst))
 	{
-		instance_destroy(inst,true);
+		with(inst)
+		{
+			instance_destroy();
+		}
 	}
 
 }
