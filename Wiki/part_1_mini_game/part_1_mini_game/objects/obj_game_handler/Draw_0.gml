@@ -16,7 +16,7 @@ if(game_start)
 	var _x = _view_x + _view_w/6;
 	var _y = _view_y + 50 + gui_pos_delta;
 	draw_sprite(spr_line_bg,0,_x,_y);
-	var str = "Balls left: " + string(instance_number(obj_ball));
+	var str = "Boxes left: " + string(instance_number(obj_ball));
 	draw_text(_x,_y,str);
 	str = "Time left: " + string(game_time) + "s";
 	_x = _view_x + _view_w/2;
