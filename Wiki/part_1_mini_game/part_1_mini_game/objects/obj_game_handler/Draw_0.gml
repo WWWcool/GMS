@@ -7,6 +7,7 @@ var _view_w = camera_get_view_width(_camera);
 var _view_h = camera_get_view_height(_camera);
 
 draw_set_color(c_red);
+draw_set_font(f_main);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
@@ -53,7 +54,7 @@ if(game_start)
 		var str = "";
 		if(game_win)
 		{
-			str = "You won this round! \n\n Press - R - to restart \n Press - Space - to continue";
+			str = "You won this round! \n\n Press - R - or - Space - to restart";
 		}
 		else
 		{
@@ -78,3 +79,4 @@ else
 		}
 	}
 }
+
