@@ -1,4 +1,7 @@
 /// @description game vars
+
+randomize();
+
 game_start = global.rules;
 game_win = 0;
 game_lose = 0;
