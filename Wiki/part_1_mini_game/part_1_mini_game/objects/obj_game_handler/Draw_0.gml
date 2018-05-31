@@ -6,25 +6,30 @@ var _view_y = camera_get_view_y(_camera);
 var _view_w = camera_get_view_width(_camera);
 var _view_h = camera_get_view_height(_camera);
 
-draw_set_color(c_red);
+draw_set_color(c_white);
 draw_set_font(f_main);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 if(game_start)
 {
+	var _x = _view_x + _view_w/6;
+	var _y = _view_y + 50 + gui_pos_delta;
+	draw_sprite(spr_line_bg,0,_x,_y);
 	var str = "Balls left: " + string(instance_number(obj_ball));
-	draw_text(_view_x + _view_w/2,_view_y + 50,str);
+	draw_text(_x,_y,str);
 	str = "Time left: " + string(game_time) + "s";
-	draw_text_transformed(_view_x + _view_w/2,_view_y + 80,str,1 + gui_anim_time,1 + gui_anim_time,0);
+	_x = _view_x + _view_w/2;
+	draw_sprite_ext(spr_line_bg,0,_x,_y,1 + gui_anim_time,1 + gui_anim_time,0,c_white,1);
+	draw_text_transformed(_x,_y,str,1 + gui_anim_time,1 + gui_anim_time,0);
 
-	draw_text(_view_x + 50,_view_y + 50,"Round: work");
+	//draw_text(_view_x + 50,_view_y + 50,"Round: work");
 
 	// draw target
-	var text_x = _view_x + _view_w/2 + 150;
-	var text_y = _view_y + 60;
-	draw_text(text_x,text_y,"Target");
-	draw_sprite_ext(spr_ball,0,text_x + 20 + sprite_get_width(spr_ball),text_y,
+	_x = _view_x + _view_w/2 + 300;
+	draw_sprite(spr_panel_bg,0,_x,_y);
+	draw_text(_x,_y - 30,"Target");
+	draw_sprite_ext(spr_ball,0,_x,_y,
 						1 + gui_anim_target,1 + gui_anim_target,0,scr_get_color(game_target_index),1);
 
 	if(gui_anim_target_dir)
@@ -61,6 +66,17 @@ if(game_start)
 			str = "You losed this round! \n\n Press - R - to restart";
 		}
 		scr_draw_msg(str,gui_win_alpha,1,gui_win_alpha_speed/10);
+		if(gui_pos_delta > gui_pos_delta_init)
+		{
+			gui_pos_delta += 3*gui_pos_delta_init*delta_time/1000000;	
+		}
+	}
+	else
+	{
+		if(gui_pos_delta < 0)
+		{
+			gui_pos_delta -= 3*gui_pos_delta_init*delta_time/1000000;	
+		}
 	}
 }
 else
@@ -75,7 +91,8 @@ else
 		scr_draw_msg(str,gui_win_alpha,0,-gui_win_alpha_speed);
 		if(gui_win_alpha[0] <= 0)
 		{
-			game_start = 1;
+			global.rules = 1;
+			game_start = global.rules;
 		}
 	}
 }
