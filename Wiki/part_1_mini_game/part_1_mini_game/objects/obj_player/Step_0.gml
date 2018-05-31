@@ -48,9 +48,9 @@ if(!stop_move)
 			{
 				with(inst)
 				{
+					instance_create_layer(x,y,"Efx",obj_exf_explode);
 					instance_destroy();
 				}
-				anim_get = 1;
 			}
 		}
 		if(point_distance(x,y,track_x,track_y) > track_delta)
@@ -67,12 +67,6 @@ if(!stop_move)
 	}
 }
 
-if(anim_get)
-{
-	instance_create_layer(x,y,"Efx",obj_exf_explode);
-	anim_get = 0;
-}
-
 if(instance_number(obj_ball) == 0)
 {
 	x = room_width/2;
@@ -82,7 +76,7 @@ if(instance_number(obj_ball) == 0)
 	if(random_delay <= 0)
 	{
 		instance_create_layer(irandom(room_width),irandom(room_height),"Efx",obj_exf_explode);
-		random_delay = 0;random_range(random_delay_min,random_delay_max);
+		random_delay = random_range(random_delay_min,random_delay_max);
 	}
 	else
 	{
