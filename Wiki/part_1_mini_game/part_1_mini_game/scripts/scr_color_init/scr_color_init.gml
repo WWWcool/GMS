@@ -13,3 +13,4 @@ global.col_orange	= make_color_rgb(236,176,91);
 global.col_green	= make_color_rgb(172,191,0);
 global.col_emerald	= make_color_rgb(0,166,160);
 
+global.game_round	= 1;

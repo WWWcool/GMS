@@ -5,7 +5,7 @@ if(!c_ok)
 {
 	if(point_in_circle(mouse_x,mouse_y,x,y,c_rad))
 	{
-		c_rad += scr_get_delta(c_rad_speed);
+		c_rad += scr_get_delta(c_rad_speed * scr_get_round());
 		if(c_rad >=  c_rad_max)
 		{
 			c_ok = 1;
