@@ -3,6 +3,7 @@
 
 draw_self();
 
-draw_text(x, y - sprite_height, "Target");
-
-
+if(!instance_exists(connect_inst))
+{
+	draw_line(x,y,x - connect_distanse,y);
+}
